@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador finaceiro</title>
+</head>
+
+<body>
+    <div style="background-color: #008B8B; width: 550px; height: 300px;">
+
+        <h1>Simulador financeiro projeto bancada</h1>
+
+        <span style="color: white;">
+            Valor gasto em fruta no ano <br> <input id="in_quantidade" placeholder="1500000">
+            <br> <br> <br>
+
+            <div style="float: left; background-color: #008B8B;"> quantidade de bancadas <br> <input id="in_bancada"
+                    placeholder="Ex:8"> </div>
+            <br> <br> <br><br>
+            <div style="float: left;"></div>
+        </span>
+        <button onclick="resultado()">
+            resultado
+        </button>
+
+        <div id="div_final">
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function resultado() {
+        var valor_trasnformacao = Math.round(Number(in_quantidade.value) * 0.2);
+        var bancada = Number(in_bancada.value)
+        var bancada_valor = Number(in_bancada.value) * 5000
+        var bancada_porcentagem = Math.round(Number(bancada_valor) / Number(valor_trasnformacao) * 100)
+        div_final.innerHTML = ` Cerga de <span style = "color:white"> <b> 20% </b> </span> é desperdiçado que resultaria em <span style = "color:white" <b>  R$: ${valor_trasnformacao}</b> </span> por ano <br>
+            e com essa(s) <span style = "color:white" <b>${bancada}</b> </span> bancada(s), você gastara apenas <span style = "color:white" <b> R$: ${bancada_valor}</b> </span> sendo assim  <br>
+            apenas <span style = "color:white"><b> ${bancada_porcentagem}% </b></span> do seu prejuízo em frutas anual.`;
+    }
+
+</script>
