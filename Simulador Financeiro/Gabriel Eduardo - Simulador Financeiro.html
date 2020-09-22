@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador Financeiro - SPLINT 1</title>
+</head>
+<body style="background-color:cadetblue; color:#fff; ">
+  <h1 style="text-align: center;">Simulador Financeiro - Splint 1 - Gabriel Eduardo de Carvalho Nicodemos</h1>
+
+  
+ <div  style="margin-left: 500px; margin-top: 100px;">
+  <h2>Orçamento de bancadas</h2>
+  <p>Quantas bancadas deseja? </p> 
+  <input id="qtd" style="background-color: cadetblue; border: 1px solid #fff; color: #fff; padding: 5px;" ><br><br>
+ <button onclick="bancada()" style="background-color: cadetblue; border: 1px solid #fff; color: #fff; padding: 5px;" >Orçamento</button><br><br>
+ </div> <br>
+ 
+ <div id="div_bancada" style="margin-left: 500px;">
+
+</div>
+
+
+<div style="margin-left: 500px;">
+  <h2>Benefício de ter nosso produtos em numeros</h2>
+  <p>Qual o seu gasto anual com Frutas e Hortaliças (R$)</p><input id="valor" style="background-color: cadetblue; border: 1px solid #fff; color: #fff; padding: 5px;" ><br><br>
+  <button onclick="gastos()" style="background-color: cadetblue; border: 1px solid #fff; color: #fff; padding: 5px;" >Calcular seu desperdicio anual</button><br>
+</div><br>
+
+
+<div id="div_preju" style="margin-left: 500px;">
+</div>
+</body>
+</html>
+
+<script>
+function bancada(){
+var calc_bancada = qtd.value * 5000;
+div_bancada.innerHTML = `O valor total de ${qtd.value} é de ${calc_bancada} reais`;
+}
+
+
+function gastos(){
+var calc_gastos = valor.value * 0.2;
+div_preju.innerHTML = `Seu mercado/comércio tem o prejuízo anual de ${calc_gastos} reias, em desperdícios de frutas`;
+}
+
+</script>
