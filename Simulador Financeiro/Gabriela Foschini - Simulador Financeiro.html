@@ -9,11 +9,16 @@
     
 <div style= 'margin-left: 400px;'>
 
+    <!-- TÍTULO CALCULADORA -->
+
     <h1>CÁLCULO RETORNO DE INVESTIMENTO</h1> <br> 
     
     <div id='caixa' style= 'background-color: #e0ffb3; height: 170px; width: 500px;'>
     <b> Valor da bancada: R$ 5.000,00 </b> <br> <br>
     Valor que deixa de ser desperdiçado diariamente: <input id= 'valor_desperdicio' placeholder="R$"> <br> <br>
+
+    <!-- BOTÃO -->
+
     <button onclick='resultado ()'>CÁLCULO</button>
 
     <div id='div_resultado'></div> 
@@ -21,6 +26,9 @@
     </div>
 
 </div>
+
+    <!-- IMAGEM INTERATIVA -->
+
 <div id= 'div_pilha' style= 'display: none'>
 <img src= 'https://cdn.discordapp.com/attachments/746086654732796057/758084516731420762/pilha_02.PNG' style= 'height: 350px;'>
 <img src= 'https://cdn.discordapp.com/attachments/746086654732796057/758084510922571827/pilha_1.PNG' style= 'height: 350px; float: right';>
@@ -29,6 +37,8 @@
 </body>
 </html>
 <script>
+
+// CÁLCULO DO RETORNO DO INVESTIMENTO
 
 function resultado () {
     var res = Math.round (5000 / valor_desperdicio.value);
