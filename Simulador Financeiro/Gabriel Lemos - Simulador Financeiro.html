@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador financeiro</title>
+</head>
+
+<body style="background-color: cornflowerblue; color: white; font-size: large;">
+
+    <img src="https://media.discordapp.net/attachments/751096723618791524/757614751340822539/Logo-Empresa-removebg-preview.png?width=465&height=465"
+        alt="logo 5G" style="float: left; height: 200px; margin-left: 500px; margin-top: 70px;">
+
+
+    <div style="width: 25%; float: left; margin-top: 100px;">
+
+        <h2>Simule sua economia!</h2>
+
+        Coloque aqui seu gasto mensal com frutas: <br><br>
+
+        <input type="number" id="gasto"
+            style="height: 30px; border: 1px solid black;"> <br><br>
+
+        <button style="border: 1px solid black; color: black; height: 30px;" onclick="economia()">Calcule sua economia</button> <br><br>
+
+        <div id="economia_cliente"></div>
+
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+
+    function economia() {
+        var valor_economia = Math.round(gasto.value * .1);
+        var valor_economia1 = Math.round(gasto.value * 0.15);
+        var v_pago = Math.round(5000 / valor_economia);
+        var v_pago1 = Math.round(5000 / valor_economia1);
+        economia_cliente.innerHTML = `Caso você substituísse TODAS as suas bancadas, <br>
+            sua economia seria por volta de <b style="color:black"> R$ ${valor_economia} </b> a <b style="color:black"> R$ ${valor_economia1} </b> por mês. <br><br>
+            A bancada se pagará em cerca de <b style="color:black"> ${v_pago} </b> a <b style="color:black"> ${v_pago1} </b> meses.`;
+    }
+
+</script>
