@@ -15,3 +15,4 @@ Rafael Holland
 Sprint 2:
 Gabriel Monteiro
 Rafael Holland
+Nicolas Sousa Conde
