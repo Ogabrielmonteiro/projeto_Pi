@@ -16,3 +16,5 @@ Sprint 2:
 Gabriel Monteiro
 Rafael Holland
 Talita Cabral
+Gabriel Ortelan
+
