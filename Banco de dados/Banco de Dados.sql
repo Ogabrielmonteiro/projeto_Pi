@@ -1,5 +1,6 @@
 create database bancada;
 use bancada;
+
 create table cadastro (
 	id int primary key auto_increment,
 	nome varchar(80) not null,
@@ -17,8 +18,8 @@ insert into cadastro values
 
 create table fruta (
 	id_fruta int primary key auto_increment,
-    nome_fruta varchar (40) not null,
-	categoria int not null
+    nome_fruta varchar(40) not null,
+	fkCategoria int
 );
 
 insert into fruta values
@@ -28,13 +29,25 @@ insert into fruta values
 (null,"laranja",2),
 (null,"mexirica",2),
 (null,"vagem",2),
-(null,"banana",3), 
+(null,"banana",3),
 (null,"mamão",3),
 (null,"limão",3);
 
+create table categoria (
+	id_categoria int primary key auto_increment,
+    categoria varchar(20) not null,
+    temp_categoria decimal(3,1) not null
+    );
+alter table fruta add foreign key (fkCategoria) references categoria (id_categoria);
+
+insert into categoria values
+(null,"cat1","0° a 1°"),
+(null,"cat2","3° a 8°"),
+(null,"cat3","10° a 14°");
+
 create table sensores (
 	id_sensor int primary key auto_increment,
-    temperatura decimal(3,1) not null,
+    temp_real decimal(3,1) not null,
     tempo datetime not null
 );
 
@@ -46,3 +59,5 @@ insert into sensores values
 (null,"5.4","2020-09-16 10:50:05"),
 (null,"5.5","2020-09-16 10:49:05"),
 (null,"5.5","2020-09-16 10:48:05");
+
+select fruta.*,categoria.* from fruta, categoria where fkCategoria = id_categoria;
