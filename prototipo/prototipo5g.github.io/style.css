@@ -1,0 +1,268 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  outline-style: none;
+}
+body {
+  height: 100vh;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+li a {
+  color: #fec63e;
+}
+
+li a:hover {
+  color: white;
+  animation-delay: 1s;
+  transition-duration: 0.7s;
+  animation-duration: 0.7s;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80px;
+  background-color: #121214;
+  width: 100%;
+}
+
+.imagemHeader {
+  width: 160px;
+  height: 50px;
+  background-color: black;
+}
+
+.listaMenu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  font-weight: bold;
+}
+
+.listaMenu li {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.imagem2 {
+  display: flex;
+  background-image: url("BGPS.png");
+  background-size: cover;
+  height: 380px;
+  align-items: center;
+  justify-content: center;
+}
+.img-text {
+  color: white;
+  text-align: center;
+}
+
+.quemSomos {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.quemSomos-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fec63e;
+}
+
+.quemSomos-title::after,
+.solucao-title::after {
+  content: "----------";
+  letter-spacing: -2px;
+}
+
+.quemSomos-text {
+  width: 50%;
+}
+
+.quemSomos-button {
+  margin-top: 14px;
+  padding: 7px 33px;
+}
+
+.solucao-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fec63e;
+}
+
+.solucao {
+  display: flex;
+  flex-direction: column;
+  height: 583px;
+  background-color: #121214;
+  justify-content: space-evenly;
+}
+
+.solucao-div {
+  display: flex;
+  justify-content: center;
+}
+
+.solucao-texto {
+  width: 35%;
+  color: white;
+}
+
+.solucao-imagem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.solucao-imagem img {
+  margin: 10px 20px;
+}
+
+.solucao-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.solucao-botao {
+  margin-top: 14px;
+  padding: 7px 24px;
+}
+
+.orcamento {
+  display: flex;
+  height: 565px;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.orcamento-title::after {
+  content: "----------";
+  letter-spacing: -2px;
+  right: 20px;
+}
+
+.orcamento-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  color: #fec63e;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-nome,
+.input-email,
+.input-telefone {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 40px;
+  margin-bottom: 20px;
+  border: 3px solid #fec63e;
+  outline-style: none;
+  padding: 0 5px;
+}
+
+.inputMensagem {
+  width: 400px;
+  height: 120px;
+  border: 3px solid #fec63e;
+  padding: 0 5px;
+}
+.orcamento-botao:hover {
+  color: black;
+  border: 3px solid black;
+  transition-duration: 0.7s;
+  animation-duration: 0.7s;
+}
+.orcamento-botao {
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 7px 24px;
+  border: 3px solid#FEC63E;
+  color: #fec63e;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.footer {
+  height: 210px;
+  background-color: #121214;
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+}
+
+.footer div {
+  margin-left: 60px;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #fec63e;
+}
+
+.conteudo-contato,
+.footer-text,
+.conteudo-img {
+  margin-top: 20px;
+  color: #fec63e;
+}
+
+.conteudo-img {
+  margin-top: 15px;
+}
+
+.img2 {
+  margin-left: 5px;
+}
+
+.conteudo::after {
+  content: "--------------";
+  letter-spacing: -2px;
+}
+p a:hover {
+  color: white;
+  transition-duration: 0.7s;
+  animation-duration: 0.7s;
+}
+p a {
+  color: #fec63e;
+}
+
+.final-pag {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: black;
+  color: #fec63e;
+}
