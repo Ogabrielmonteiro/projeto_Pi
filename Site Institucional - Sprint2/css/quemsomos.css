@@ -37,86 +37,31 @@
 .login {
     margin-left: 200px;
 }
-.videoBg{
-    width: 100% ;
-}
-
-
-.buttonBG {
-    margin-bottom: 200px;
-}
-
-.quemSomos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 385px;
-    justify-content: space-evenly;
-}
-.quemSomos-text {
-    width: 60%;
-}
-
-.solucao {
-    background-color: #ccc;
-    display: flex;
-    flex-direction: column;
-    height: 485px;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.solucao-div {
-    width: 60%;
+.quemSomos{
+    height: 93vh;
     display: flex;
     justify-content: center;
+    background-color: cornflowerblue;
 }
-.solucao-img img {
-    margin: 10px 20px;    
+.quemSomosContainer{
+    width: 60%;
+    display: flex;
 }
-.solucao-text {
-    width: 30%;
-}
-
-.orcamento {
-    height: 600px;
+.quemSomosTexto{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.orcamento-div {
-    display: flex;
-    flex-direction: column;
-}
-.orcamento-form {
-    display: flex;
-    flex-direction: column;
-}
-.orcamento-title {
-    margin-bottom: 50px;
-    margin-top: 60px;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
-.form {
-    padding: 0 5px;
-    margin-bottom: 20px;
-    border: 3px solid;
-    height: 25px;
-    width: 400px;
+.quemSomosTexto img{
+    width: 100%;
 }
-.form-textarea {
-    padding: 0 5px;
-    border: 3px solid;
-    height: 125px;
-    width: 400px;
-}
-.form-button {
-    margin-top: 40px;
-    border: 3px solid;
-    background-color: transparent;
-    cursor: pointer;
-    padding: 7px 24px;
-    width: 100px;
-}
+
+
+
+
 
 .footer {
     height: 150px;
