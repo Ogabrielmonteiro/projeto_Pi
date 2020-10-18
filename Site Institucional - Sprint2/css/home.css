@@ -1,153 +1,364 @@
+/* Flex Box
+O flex-box sempre irá alinhar o que estiver dentro baseado no pai, por exemplo caso você queira
+alinhar tudo que está dentro de um bloco 
+- Para conseguir usar o flex-box é necessário colocar a propriedade "display:flex" 
+    <div class="quemSomos">
+        <h1> Quem Somos </h1>
+        <p> Somos a 5G soluções </p>
+    </div>
+
+Nesse exemplo para alinhar o H1 e a tag P o atributo flex-box deverá estar no pai dele que no caso é a div
+com a classe "quemSomos" 
+    No css iria ficar assim:
+
+    .quemSomos {
+        display: flex;
+    }
+Após colocar isso você já poderá utilizar os outros elementos do flex-box para alinhar a div, os mais comuns são:
+    - justify-content: Alinha no eixo X, ou seja, horizontalmente. e junto com ele você pode usar as seguintes
+    propriedades: 
+
+        flex-end: irá mandar todos os itens de dentro da DIV para o fim da tela.
+        flex-start: irá manter os itens no inicio da tela.
+        center: manda todos os itens no centro da tela.
+        space-between: ele pega a quantidade de atributos e distribui em cada canto da tela, por exemplo caso você tenha 3 itens 1 irá ficar no canto mais 
+            esquerdo, o outro no canto mais direito da tela e o outro no centro, mantendo o mesmo espaçamento para eles.
+        space-evenly: É parecido com o space-between porém em vez de mandar um para cada canto da tela ele mantém uma margem igual para todos sem jogar    os elementos nas extremidades.
+        space-around: Cria um espaçamento entre os elementos. Os espaçamentos do meio são duas vezes maiores que o inicial e final.
+
+    - Align-itens: Alinha os itens no eixo Y, ou seja, verticalmente. E junto a ele você poderá usar as mesmas propriedades
+    do justify-content. Você pode verifica-lás acima a partir da linha 20.
+
+    - Flex-direction: Ele define a direção que os elementos irão ir, por padrão ele é ROW que significa linha, portanto os itens ficarão um do 
+    lado do outro e ele possui as seguintes propriedades:
+
+        column: Ajusta os itens em colunas, porém lembrem-se que toda vez que utilizar o column ele irá inverter o 'justify-content' e o 'align-itens'
+        portanto o justify-content vai alinhar no eixo Y, portanto, verticalmente. E o align-itens vai alinhar no eixo X, portanto, horizontalmente.
+        
+    Caso tenham dúvidas podem checar nesse link aqui: https://origamid.com/projetos/flexbox-guia-completo/ 
+    ou me chamar no Zap Efron pelo número: (47) 99955-7419 ou mande uma mensagem no nosso lindo grupo do ZipZop! :D
+
+
+
+*/
+
+/* o * seleciona todos os elementos da página */
 * {
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-    outline-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  outline-style: none;
+  font-family: monospace;
+  font-size: 1.1rem;
 }
+html {
+  scroll-behavior: smooth;
+}
+/* Segura e alinha a navbar */
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 7vh;
-    background-color: #ccc;
-    width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 7vh; */
+  background-color: transparent;
+  width: 100%;
+  z-index: 2;
 }
-.current{
-    color: blueviolet;
-}
+/* Faz a navbar ter um tamanho específico e alinha os objetos de dentro */
 .containerNavbar {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+/* logo da navbar */
 .imgHeader {
-    width: 160px;
-    height: 50px;
-    background-color: black;
+  width: 160px;
+  height: 50px;
+  background-color: white;
 }
+/* Posiciona os elementos de dentro da UL da navbar */
 .navbar ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
-.listamenu, .linavbar {
-    margin: 0 5px;
+/* Coloca uma margin para a UL ficar mais separada */
+.listamenu,
+.linavbar {
+  margin: 0 20px;
+  color: white;
+  font-weight: bold;
 }
+/* Seta as cores de todos os <a> das tags listamenu e linavbar */
+.listamenu,
+.linavbar a {
+  color: white;
+}
+/* separa o login do resto da lista das LIs */
 .login {
-    margin-left: 200px;
+  margin-left: 200px;
 }
-.videoBg{
-    width: 100% ;
+/* Pinta a tag <a> do login de branco */
+.login a {
+  color: white;
 }
-
-
+/* Mostra a página atual que o usuário está */
+.current {
+  color: tomato;
+}
+/* Seta um tamanho pro vídeo de background, o atributo 'z-index'
+serve para colocar o vídeo 'atrás' da navbar, como se fosse um sistema de camadas */
+.videoBg {
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+/* permite posicionar o botão no centro e no meio do BG */
 .buttonBG {
-    margin-bottom: 200px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
-
+/* posiciona o botão no background */
+/* e coloca os estilos */
+.buttonBTN {
+  padding: 15px 35px;
+  position: absolute;
+  margin-bottom: 600px;
+  border-radius: 50px;
+  border: 3px solid #e85924;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+/* O hover ativa quando passa o mouse em cima, e muda as propriedades que estavam antes, quando tira o mouse volta ao normal */
+.buttonBTN:hover {
+  transition: 0.5s;
+  color: rgb(232, 89, 36);
+  padding: 20px 45px;
+  border: 4px solid #e85924;
+  background-color: #1a1b1f;
+}
+/* posiciona os elementos da div quemSomos */
 .quemSomos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 385px;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 385px;
+  justify-content: space-evenly;
+  background: #fff3e4;
+  color: #e85924;
 }
+/* coloca o quem somos dentro do container */
 .quemSomos-text {
-    width: 60%;
+  width: 60%;
+  color: black;
 }
-
+/* Da o estilo do botão */
+.quemSomos-button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 3px solid #e85924;
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+/* hover para mudar as propriedades do botão quando passa o mouse em cima */
+.quemSomos-button:hover {
+  transition: 0.5s;
+  color: rgb(232, 89, 36);
+  padding: 10px 30px;
+}
+/* Posiciona os elementos da solução e também está dando cores */
 .solucao {
-    background-color: #ccc;
-    display: flex;
-    flex-direction: column;
-    height: 485px;
-    justify-content: space-evenly;
-    align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 485px;
+  justify-content: space-evenly;
+  align-items: center;
+  color: black;
 }
+/* Da cor ao título da solução */
+.solucao-title {
+  color: #e85924;
+}
+/* Container da nossa div solução */
 .solucao-div {
-    width: 60%;
-    display: flex;
-    justify-content: center;
+  width: 70%;
+  display: flex;
+  justify-content: center;
 }
+/* Controla o tamanho e o posicionamento da foto da bancada */
 .solucao-img img {
-    margin: 10px 20px;    
+  margin: 10px 20px;
 }
+/* Controla o tamanho do texto da solução na DIV */
 .solucao-text {
-    width: 30%;
+  width: 35%;
 }
-
+/* Da o estilo ao botão da solução */
+.solucao-button {
+  padding: 10px 35px;
+  border-radius: 50px;
+  border: 3px solid #e85924;
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+/* Da o estilo quando o mouse passa em cima */
+.solucao-button:hover {
+  transition: 0.5s;
+  color: rgb(232, 89, 36);
+  padding: 10px 45px;
+}
+/* Está setando um tamanho, cor e alinhando os itens da div orçamento */
 .orcamento {
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff3e4;
+  font-weight: bold;
 }
+/* Está alinhando o formulário inteiro */
 .orcamento-div {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
+/* Alinhando os itens do formulário */
 .orcamento-form {
-    display: flex;
-    flex-direction: column;
+  color: #e85924;
+  display: flex;
+  flex-direction: column;
 }
+/* Está dando cor e posicionando o título do formulário */
 .orcamento-title {
-    margin-bottom: 50px;
-    margin-top: 60px;
+  color: #e85924;
+  margin-bottom: 50px;
+  margin-top: 60px;
 }
-
+/* Está setando tamanho dos inputs do formulário e dando estilo */
 .form {
-    padding: 0 5px;
-    margin-bottom: 20px;
-    border: 3px solid;
-    height: 25px;
-    width: 400px;
+  padding: 0 5px;
+  margin-bottom: 20px;
+  border: 3px solid #e85924;
+  height: 25px;
+  width: 400px;
+  background-color: white;
+  color: white;
 }
+/* Está colorindo o texto que tem em cima dos inputs */
+.form-dados {
+  color: black;
+}
+/* Está setando o tamanho e estilo da area de mensagem *Vale lembrar que usamos isso pois um input normal não fica com o tamanho mensagem* */
 .form-textarea {
-    padding: 0 5px;
-    border: 3px solid;
-    height: 125px;
-    width: 400px;
+  padding: 0 5px;
+  border: 3px solid #e85924;
+  height: 125px;
+  width: 400px;
+  background-color: white;
+  color: white;
 }
+/* Setando estilo para o nosso lindo botãozinho */
 .form-button {
-    margin-top: 40px;
-    border: 3px solid;
-    background-color: transparent;
-    cursor: pointer;
-    padding: 7px 24px;
-    width: 100px;
+  margin-top: 30px;
+  padding: 10px 35px;
+  border-radius: 50px;
+  border: 3px solid #e85924;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.5s;
 }
-
+/* Estilo quando passa o mouse em cima do botão */
+.form-button:hover {
+  transition: 0.5s;
+  color: rgb(232, 89, 36);
+  padding: 10px 45px;
+}
+/* Está alinhando o botão no centro abaixo do formulário */
+.div-button-orc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Está alinhando a div do footer no centro */
 .footer {
-    height: 150px;
-    background: #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 150px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+/* está alinhando os itens do footer no centro, no caso o "5gSoluções", "Contato" e "Redes Sociais" que tem lá dentro */
 .footer-div {
-    width: 60%;
-    display: flex;
-    justify-content: space-evenly;
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  font-weight: bold;
 }
+/* Alinha o conteúdo que tem dentro de cada div, exemplo os dados de contato, e o texto sobre a 5G Soluções */
 .footer-conteudo {
-    display: flex;
-    flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
+  color: white;
 }
+/* line-height está aumentando a distancia entre as linhas, e esta pintando o conteúdo de branco com color */
+.footer-contato {
+  line-height: 21px;
+  color: white;
+  margin: 0 10px 0 10px;
+}
+/* Seta um tamanho para as redes sociais */
 .footer-social img {
-    display: flex;
-    height: 30px;
-    width: 30px;
+  display: flex;
+  height: 30px;
+  width: 30px;
 }
+/* Alinha os ícones das redes sociais horizontalmente e */
+.redes-sociais {
+  display: flex;
+}
+/* Coloca a borda em volta dos icones das redes sociais */
+.redes-sociais a {
+  border: 3px solid white;
+  padding: 3px;
+  transition: 0.5s;
+}
+/* Animação de efeito quando passa o mouse em cima das redes sociais. */
+.redes-sociais a:hover {
+  transition: 0.3s;
+  border: 3px solid #e85924;
+}
+/* Da um espaçamento entre as redes sociais para elas não ficarem coladas */
+.redesSociaisIMG {
+  margin-left: 5px;
+}
+/* Aumenta a ditancia dos títulos do footer com o conteúdo deles */
 .footer-title {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
+/* Alinha, da cor e posiciona os itens do footer final *aquela barra branca* */
 .footer-end {
-    height: 45px;
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 45px;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
 }
