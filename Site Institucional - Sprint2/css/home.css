@@ -14,7 +14,7 @@ com a classe "quemSomos"
     .quemSomos {
         display: flex;
     }
-Após colocar isso você já poderá utilizar os outros elementos do flex-box para alinhar a div, os mais comuns são:
+Anavbarpós colocar isso você já poderá utilizar os outros elementos do flex-box para alinhar a div, os mais comuns são:
     - justify-content: Alinha no eixo X, ou seja, horizontalmente. e junto com ele você pode usar as seguintes
     propriedades: 
 

@@ -1,0 +1,397 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Gráfico de 1 linha com Chart.js</title>
+	<script src="https://www.chartjs.org/dist/2.9.3/Chart.min.js"></script>
+	<script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+	<style>
+	canvas{
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	</style>
+</head>
+
+<body> 
+	<center>
+		<h1> Gráficos do supermercado EXTRA </h1>
+		<section>
+			<h2>Média: 0.00 ºC</h2>
+			<h2>Média Hora: 0.00 ºC</h2>
+		</section>
+	<div style="width:60%;">
+		<canvas id="c_grafico"></canvas>
+	</div>
+
+	<br>
+	<br>
+		<section>
+			<h2>Média: 0.00 ºC</h2>
+			<h2>Média Hora: 0.00 ºC</h2>
+		</section>
+	<div style="width:60%;">
+		<canvas id="c_grafico_2"></canvas>
+	</div>
+
+	<br>
+	<br>
+		<section>
+			<h2>Média: 0.00 ºC</h2>
+			<h2>Média Hora: 0.00 ºC</h2>
+		</section>
+	<div style="width:60%;">
+		<canvas id="c_grafico_3"></canvas>
+	</div>
+
+	<br>
+	<br>
+
+	</center>
+
+</body>
+
+</html>
+
+<script>
+
+	var config = {
+		type: 'line',
+		data: {
+			labels: [],
+			datasets: [{
+				label: 'Temperatura',
+				backgroundColor: window.chartColors.red,
+				borderColor: window.chartColors.blue,
+				data: [],
+				fill: false,
+			}]
+		},
+		options: {
+			responsive: true,
+			title: {
+				display: true,
+				text: 'Gráfico da temperatura categoria 1'
+			},
+			tooltips: {
+				mode: 'index',
+				intersect: false,
+			},
+			hover: {
+				mode: 'nearest',
+				intersect: true
+			},
+			scales: {
+				xAxes: [{
+					display: true,
+					scaleLabel: {
+						display: true,
+						labelString: 'Horário da Leitura'
+					}
+				}],
+				yAxes: [{
+					display: true,
+					scaleLabel: {
+						display: true,
+						labelString: 'ºC'
+					}
+				}]
+			}
+		}
+	};
+
+	// grafico 2
+	var config_2 = {
+		type: 'line',
+		data: {
+			labels: [],
+			datasets: [{
+				label: 'Temperatura',
+				backgroundColor: window.chartColors.green,
+				borderColor: window.chartColors.red,
+				data: [],
+				fill: false,
+			}]
+		},
+		options: {
+			responsive: true,
+			title: {
+				display: true,
+				text: 'Gráfico da temperatura categoria 2'
+			},
+			tooltips: {
+				mode: 'index',
+				intersect: false,
+			},
+			hover: {
+				mode: 'nearest',
+				intersect: true
+			},
+			scales: {
+				xAxes: [{
+					display: true,
+					scaleLabel: {
+						display: true,
+						labelString: 'Horário da Leitura'
+					}
+				}],
+				yAxes: [{
+					display: true,
+					scaleLabel: {
+						display: true,
+						labelString: 'ºC'
+					}
+				}]
+			}
+		}
+	};
+
+	// grafico 3
+	var config_3 = {
+		type: 'line',
+		data: {
+			labels: [],
+			datasets: [{
+				label: 'Temperatura',
+				backgroundColor: window.chartColors.red,
+				borderColor: window.chartColors.green,
+				data: [],
+				fill: false,
+			}]
+		},
+		options: {
+			responsive: true,
+			title: {
+				display: true,
+				text: 'Gráfico da temperatura categoria 3'
+			},
+			tooltips: {
+				mode: 'index',
+				intersect: false,
+			},
+			hover: {
+				mode: 'nearest',
+				intersect: true
+			},
+			scales: {
+				xAxes: [{
+					display: true,
+					scaleLabel: {
+						display: true,
+						labelString: 'Horário da Leitura'
+					}
+				}],
+				yAxes: [{
+					display: true,
+					scaleLabel: {
+						display: true,
+						labelString: 'ºC'
+					}
+				}]
+			}
+		}
+	};
+
+	// esse "sortearTemperatura()" será desnecessário quando usarmos o backend futuramente
+	function sortearTemperatura() {
+		var limiteMin = 0;
+		var limiteMax = 1;
+		var minimoAbsoluto = Math.abs(limiteMin);
+		return (Math.random() * (minimoAbsoluto+limiteMax) - minimoAbsoluto).toFixed(1);
+	}
+
+	// grafico 2
+	function sortearTemperatura_2() {
+		var limiteMin = 3;
+		var limiteMax = 8;
+		var minimoAbsoluto = Math.abs(limiteMin);
+		return (Math.random() * (minimoAbsoluto+limiteMax) - minimoAbsoluto).toFixed(1);
+	}
+
+	// grafico 3
+	function sortearTemperatura_3() {
+		var limiteMin = 10;
+		var limiteMax = 14;
+		var minimoAbsoluto = Math.abs(limiteMin);
+		return (Math.random() * (minimoAbsoluto+limiteMax) - minimoAbsoluto).toFixed(1);
+	}
+	
+
+	function recuperarDadosIniciais() {
+
+		// esse "registros" será recuperado do backend futuramente
+		var registros = [
+			{
+				momento: '00:03:42',
+				leitura: sortearTemperatura()
+			},
+			{
+				momento: '00:03:52',
+				leitura: sortearTemperatura()
+			},
+			{
+				momento: '00:04:02',
+				leitura: sortearTemperatura()
+			},
+			{
+				momento: '00:04:12',
+				leitura: sortearTemperatura()
+			},
+			{
+				momento: '00:04:22',
+				leitura: sortearTemperatura()
+			},
+			{
+				momento: '00:04:32',
+				leitura: sortearTemperatura()
+			},
+			{
+				momento: '00:04:42',
+				leitura: sortearTemperatura()
+			}
+			
+		];
+
+			// grafico 2
+		var registros_2 = [
+			{
+				momento: '00:03:42',
+				leitura: sortearTemperatura_2()
+			},
+			{
+				momento: '00:03:52',
+				leitura: sortearTemperatura_2()
+			},
+			{
+				momento: '00:04:02',
+				leitura: sortearTemperatura_2()
+			},
+			{
+				momento: '00:04:12',
+				leitura: sortearTemperatura_2()
+			},
+			{
+				momento: '00:04:22',
+				leitura: sortearTemperatura_2()
+			},
+			{
+				momento: '00:04:32',
+				leitura: sortearTemperatura_2()
+			},
+			{
+				momento: '00:04:42',
+				leitura: sortearTemperatura_2()
+			}
+		];
+
+		// grafico 3
+		var registros_3 = [
+			{
+				momento: '00:03:42',
+				leitura: sortearTemperatura_3()
+			},
+			{
+				momento: '00:03:52',
+				leitura: sortearTemperatura_3()
+			},
+			{
+				momento: '00:04:02',
+				leitura: sortearTemperatura_3()
+			},
+			{
+				momento: '00:04:12',
+				leitura: sortearTemperatura_3()
+			},
+			{
+				momento: '00:04:22',
+				leitura: sortearTemperatura_3()
+			},
+			{
+				momento: '00:04:32',
+				leitura: sortearTemperatura_3()
+			},
+			{
+				momento: '00:04:42',
+				leitura: sortearTemperatura_3()
+			}
+		];
+
+		var contador = 0;
+
+		// registros.length é a quantidade de itens em "registros"
+		while (contador < registros.length) {
+
+			config.data.labels.push(registros[contador].momento);  // incluir um novo momento
+			config.data.datasets[0].data.push(registros[contador].leitura);  // incluir uma nova leitura
+
+			// grafico 2
+			config_2.data.labels.push(registros_2[contador].momento);
+			config_2.data.datasets[0].data.push(registros_2[contador].leitura);
+			
+			// grafico 3
+			config_3.data.labels.push(registros_3[contador].momento);
+			config_3.data.datasets[0].data.push(registros_3[contador].leitura);
+
+			contador++;
+		}
+
+	}
+
+	function receberNovasLeituras() {
+		setTimeout(() => {
+			
+			// esses "agora" etc até "momentos" serão desnecessários quando usarmos o backend futuramente
+			var agora = new Date();
+			var hora = agora.getHours();
+			var minuto = agora.getMinutes();
+			var segundo = agora.getSeconds();
+			var momento = `${hora>9?'':'0'}${hora}:${minuto>9?'':'0'}${minuto}:${segundo>9?'':'0'}${segundo}`;
+
+
+			// esse "novoRegistro" será recuperado do backend futuramente
+			var novoRegistro = {
+				momento: momento,
+				leitura: sortearTemperatura()
+			};
+			
+			// tirando e colocando valores no gráfico
+			config.data.labels.shift(); // apagar o primeiro
+			config.data.labels.push(novoRegistro.momento); // incluir um novo momento
+			config.data.datasets[0].data.shift();  // apagar o primeiro
+			config.data.datasets[0].data.push(novoRegistro.leitura); // incluir uma nova leitura
+
+			// Atualiza o gráfico
+			window.graficoLinha.update();	
+
+			// agendar a chamada da mesma função para daqui a 7 segundos
+			receberNovasLeituras();	
+
+		}, 7000); // 7000 ms -> 7 segundos
+	}
+
+	function plotarGrafico() {
+		// chamar os 7 últimos registros de leitura
+		recuperarDadosIniciais();
+
+		// criação do gráfico na página
+		var ctx = document.getElementById('c_grafico').getContext('2d');
+		window.graficoLinha = new Chart(ctx, config);
+
+		// grafico 2
+		var ctx_2 = document.getElementById('c_grafico_2').getContext('2d');
+		window.graficoLinha = new Chart(ctx_2, config_2);
+
+		// grafico 3
+		var ctx_3 = document.getElementById('c_grafico_3').getContext('2d');
+		window.graficoLinha = new Chart(ctx_3, config_3);
+		
+		// função que agenda a recuperação da última leitura para daqui a 7 segundos
+		//receberNovasLeituras();
+	}
+
+	// indicando que a função "plotarGrafico" será invocada assim que a página carregar
+	window.onload = plotarGrafico;
+
+</script>
