@@ -51,8 +51,13 @@ Anavbarpós colocar isso você já poderá utilizar os outros elementos do flex-
   font-family: monospace;
   font-size: 1.1rem;
 }
+/* Faz a página 'scrollar' lentamente quando clica em 
+orçemento */
 html {
   scroll-behavior: smooth;
+}
+body {
+  background-color: #1a1b1f;
 }
 /* Segura e alinha a navbar */
 .navbar {
@@ -74,9 +79,9 @@ html {
 }
 /* logo da navbar */
 .imgHeader {
-  width: 160px;
-  height: 50px;
-  background-color: white;
+  margin-top: 10px;
+  width: 200px;
+  z-index: 10;
 }
 /* Posiciona os elementos de dentro da UL da navbar */
 .navbar ul {
@@ -90,11 +95,18 @@ html {
   margin: 0 20px;
   color: white;
   font-weight: bold;
+  font-size: 20px;
+}
+/* Quando passa o mouse em cima altera a cor dos elementos */
+.listamenu li a:hover {
+  transition: 0.3s;
+  color: tomato;
 }
 /* Seta as cores de todos os <a> das tags listamenu e linavbar */
 .listamenu,
 .linavbar a {
   color: white;
+  font-size: 19px;
 }
 /* separa o login do resto da lista das LIs */
 .login {
@@ -103,6 +115,7 @@ html {
 /* Pinta a tag <a> do login de branco */
 .login a {
   color: white;
+  font-size: 20px;
 }
 /* Mostra a página atual que o usuário está */
 .current {
@@ -123,6 +136,11 @@ serve para colocar o vídeo 'atrás' da navbar, como se fosse um sistema de cama
   align-items: center;
   justify-content: center;
   position: relative;
+  color: white;
+}
+/* altera a cor da fonte do botão do background */
+.btnBg {
+  color: white;
 }
 /* posiciona o botão no background */
 /* e coloca os estilos */
@@ -156,10 +174,16 @@ serve para colocar o vídeo 'atrás' da navbar, como se fosse um sistema de cama
   background: #1a1b1f;
   color: #d25121;
 }
+/* Está aumentando o tamanho da fonte do H2 */
+.quemSomos h2 {
+  font-size: 23px;
+}
 /* coloca o quem somos dentro do container */
 .quemSomos-text {
-  width: 60%;
+  width: 50%;
   color: white;
+  font-size: 18px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 /* Da o estilo do botão */
 .quemSomos-button {
@@ -171,6 +195,10 @@ serve para colocar o vídeo 'atrás' da navbar, como se fosse um sistema de cama
   font-weight: bold;
   cursor: pointer;
   transition: 0.5s;
+}
+/* muda a cor das letras do botão */
+.quemSomos-button a {
+  color: white;
 }
 /* hover para mudar as propriedades do botão quando passa o mouse em cima */
 .quemSomos-button:hover {
@@ -191,6 +219,8 @@ serve para colocar o vídeo 'atrás' da navbar, como se fosse um sistema de cama
 /* Da cor ao título da solução */
 .solucao-title {
   color: #d25121;
+  font-size: 23px;
+  font-weight: bold;
 }
 /* Container da nossa div solução */
 .solucao-div {
@@ -204,7 +234,13 @@ serve para colocar o vídeo 'atrás' da navbar, como se fosse um sistema de cama
 }
 /* Controla o tamanho do texto da solução na DIV */
 .solucao-text {
+  font-size: 18px;
+  font-family: "Source Sans Pro", sans-serif;
   width: 35%;
+}
+.solucao-text p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
 }
 /* Da o estilo ao botão da solução */
 .solucao-button {
@@ -216,6 +252,12 @@ serve para colocar o vídeo 'atrás' da navbar, como se fosse um sistema de cama
   font-weight: bold;
   cursor: pointer;
   transition: 0.5s;
+}
+.solucao-convite {
+  color: #d25121;
+}
+.solucao-button a {
+  color: black;
 }
 /* Da o estilo quando o mouse passa em cima */
 .solucao-button:hover {
@@ -247,6 +289,8 @@ serve para colocar o vídeo 'atrás' da navbar, como se fosse um sistema de cama
   color: #d25121;
   margin-bottom: 50px;
   margin-top: 60px;
+  font-size: 23px;
+  font-weight: bold;
 }
 /* Está setando tamanho dos inputs do formulário e dando estilo */
 .form {
@@ -322,6 +366,15 @@ serve para colocar o vídeo 'atrás' da navbar, como se fosse um sistema de cama
   line-height: 21px;
   color: white;
   margin: 0 10px 0 10px;
+}
+/*  muda a cor da letra do email para branco */
+.footer-contato a {
+  color: white;
+}
+/* Da a cor ao email quando passa o mouse em cima */
+.footer-contato a:hover {
+  color: tomato;
+  transition: 0.3s;
 }
 /* Seta um tamanho para as redes sociais */
 .footer-social img {
