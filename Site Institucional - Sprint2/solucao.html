@@ -144,11 +144,11 @@
 <script>
     function vinte() {
         var porcentagemmes = Number(gasto.value) * 20 / 100;
-        resultado.innerHTML = `<span><b>Economia de  :  </b></span><span><u>${porcentagemmes}</u></span><span><b>  Mensal.</span>`;
+        resultado.innerHTML = `<span><b>Economia de   </b></span><span><u>R$${porcentagemmes.toFixed(2)}</u></span><span><b> Mensal.</span>`;
         var ano = porcentagemmes * 12;
-        Anual.innerHTML = `<span><b> Por ano seria :</b></span> <span><u>${ano}</u><b>.</b></span>`;
+        Anual.innerHTML = `<span><b> Por ano </b></span> <span><u>R$${ano.toFixed(2)}</u><b>.</b></span>`;
         var bancada = 5000 / porcentagemmes;
-        div_bancada.innerHTML = `<span><b>Nossa bancada custa </b><u>5000</u>,<b> de acordo com o que economizaria mensalmente</b>(${porcentagemmes}) <b>em</b> <u>${bancada}</u> <b>meses ela se pagaria.</b>`;
+        div_bancada.innerHTML = `<span><b>Nossa bancada custa </b><u>R$5000</u>,<b> de acordo com o que economizaria mensalmente</b> R$${porcentagemmes.toFixed(2)} <b>em</b> <u>${bancada.toFixed(0)}</u> <b>meses ela se pagaria.</b>`;
         var lucro = ano
     }
 </script>
