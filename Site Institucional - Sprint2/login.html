@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/login.css">
     <title>login</title>
 </head>
+
 <body>
-    
+
     <div class="navbar">
         <div class="containerNavbar">
-            <a href="index.html"><div class="imgHeader"></div></a>
+            <a href="index.html">
+                <div class="imgHeader"></div>
+            </a>
             <img class="imgLogin" src="./img/login.png" alt="logo login">
         </div>
     </div>
 
     <div class="login">
-        <div class="loginBg"> 
+        <div class="loginBg">
             <div class="loginTexto">
                 <h3>Login</h3>
-                <input type="text" class="loginIntens">
-                <input type="password" class="loginIntens">               
-                <button class="loginIntens">Entrar</button>
+                <input type="text" id="email" class="loginIntens">
+                <input type="password" id="inSenha" class="loginIntens">
+                <button class="loginIntens" onclick="entrar1()" id="entrar">Entrar</button>
                 <p class="loginIntens">Esqueceu a senha?</p>
             </div>
         </div>
@@ -32,4 +36,21 @@
     </div>
 
 </body>
+
 </html>
+
+<script>
+        function entrar1(){
+            var senha = inSenha.value
+            var login = email.value
+            if(senha == 123456 && login == "extra@5g.com.br"){
+                 window.location.href = "./dashboard.html";
+            } else {
+                alert ("ACESSO NEGADO");
+            }
+        }
+        
+
+    
+
+</script>
