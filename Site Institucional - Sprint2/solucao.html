@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/solucao.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="containerNavbar">
+            <div class="imgHeader"></div>
+            <ul class="listamenu">
+                <li class="linavbar current">HOME</li>
+                <li class="linavbar"> <a href="quemsomos.html">QUEM SOMOS</a></li>
+                <li class="linavbar">SOLUÇÃO</li>
+                <li class="linavbar"> <a href="#orcamento">ORÇAMENTO</a></li>
+                <li class="login"> <a href="login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="paidetodos">
+        <div class="solucaoTitulo">
+            <h3>SOLUCAO</h3>
+        </div>
+        <div class="solucaoBloco1">
+            <div class="textoBloco1">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, commodi, eveniet velit dicta
+                    voluptatibus consectetur veniam expedita corporis excepturi perferendis odio explicabo dolore sequi
+                    ullam! Odit perferendis ipsam minus omnis! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Veritatis, magni odit! Corporis libero nesciunt ducimus officia, itaque ipsa minima laborum commodi
+                    provident. Distinctio magnam totam tempore laudantium. Iusto, doloremque architecto? Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Ullam adipisci voluptas cum, iusto sapiente asperiores
+                    non iure libero! Eos earum unde mollitia error est molestias corrupti aliquid hic dolorum alias.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aperiam in, corrupti earum
+                    suscipit deleniti et tempore veniam minus officiis. Officiis neque quisquam enim laborum veritatis
+                    quis accusantium id qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vitae beatae
+                    dolorem fugiat repellat incidunt maiores assumenda quidem, tempore vel consectetur. Hic consequatur
+                    iusto dicta debitis, minus architecto qui explicabo.</p>
+
+            </div>
+            <div class="imgBloco1">
+                <div class="imagens12">
+                    <span class="img1"></span>
+                    <span class="img2"></span>
+                </div>
+                <span class="img3"></span>
+            </div>
+        </div>
+
+        <div class="solucaoBloco2">
+            <div class="imgBloco2">
+            </div>
+            <div class="textoBloco2">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, commodi, eveniet velit dicta
+                    voluptatibus consectetur veniam expedita corporis excepturi perferendis odio explicabo dolore sequi
+                    ullam! Odit perferendis ipsam minus omnis! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Veritatis, magni odit! Corporis libero nesciunt ducimus officia, itaque ipsa minima laborum commodi
+                    provident. Distinctio magnam totam tempore laudantium. Iusto, doloremque architecto? Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Ullam adipisci voluptas cum, iusto sapiente asperiores
+                    non iure libero! Eos earum unde mollitia error est molestias corrupti aliquid hic dolorum alias.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aperiam in, corrupti earum
+                    suscipit deleniti et tempore veniam minus officiis. Officiis neque quisquam enim laborum veritatis
+                    quis accusantium id qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vitae beatae
+                    dolorem fugiat repellat incidunt maiores assumenda quidem, tempore vel consectetur. Hic consequatur
+                    iusto dicta debitis, minus architecto qui explicabo.</p>
+            </div>
+        </div>
+
+
+        <div class="propostaPai">
+            <div class="propostaTitulo">
+                <b>GOSTOU DA NOSSA PROPOSTA? FAÇA SUA SIMULAÇÃO</b>
+            </div>
+        </div>
+
+
+
+
+       
+        <b>Gasto mensal</b>
+        <input id="gasto" placeholder=R$>
+        <div class="botaoCalculadora">
+            <button onclick="vinte()">Calcular</button>
+            <br>
+        </div>
+
+        <div class="textoCalculadora">
+        <div id="resultado">
+        </div>
+        <div id="Anual">
+        </div>
+        <div id="div_bancada">
+        </div>
+        <div id="div_lucro">
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <div class="footer">
+        <div class="footer-div">
+            <div class="footer-conteudo">
+                <p class="footer-title">5G Soluções</p>
+                <p>Soluções com IOT para otimizar seus ganhos <br>
+                    diminuindo suas perdas com frutas e legumes
+                </p>
+            </div>
+            <div class="footer-contato">
+                <p class="footer-title">Contato</p>
+                <p>Email: contato@5gsoluções.com <br>
+                    Telefone: (11) 9999-9999 <br>
+                    Rua Haddock Lobo, 595 <br> Cerqueira César, São Paulo - SP, 01414-001
+                </p>
+            </div>
+            <div class="footer-social">
+                <p class="footer-title">Redes sociais</p>
+                <div class="redes-sociais">
+                    <a href="https://www.linkedin.com" target="_blank"><img src="./img/linkedin.png"></a>
+                    <a href="https://www.instagram.com" target="_blank" class="redesSociaisIMG"><img
+                            src="./img/instagram.png"></a>
+                    <a href="https://www.facebook.com" target="_blank" class="redesSociaisIMG"><img src="
+                        ./img/facebook.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Final do footer -->
+    <!-- Inicio do rodapé -->
+    <div class="footer-end">
+        <p>Copyright © 2020-2020 5G Soluções LTDA</p>
+    </div>
+
+
+
+</body>
+
+</html>
+
+<script>
+    function vinte() {
+        var porcentagemmes = Number(gasto.value) * 20 / 100;
+        resultado.innerHTML = `<span><b>Economia de  :  </b></span><span><u>${porcentagemmes}</u></span><span><b>  Mensal.</span>`;
+        var ano = porcentagemmes * 12;
+        Anual.innerHTML = `<span><b> Por ano seria :</b></span> <span><u>${ano}</u><b>.</b></span>`;
+        var bancada = 5000 / porcentagemmes;
+        div_bancada.innerHTML = `<span><b>Nossa bancada custa </b><u>5000</u>,<b> de acordo com o que economizaria mensalmente</b>(${porcentagemmes}) <b>em</b> <u>${bancada}</u> <b>meses ela se pagaria.</b>`;
+        var lucro = ano
+    }
+</script>
