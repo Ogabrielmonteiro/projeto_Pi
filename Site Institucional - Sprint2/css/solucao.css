@@ -155,6 +155,28 @@ b {
 }
 
 .botaoCalculadora {
+  margin-top: 30px;
+  padding: 10px 35px;
+  border-radius: 50px;
+  border: 3px solid #d25121;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.5s;
+  color: white;
+}
+
+.botaoCalculadora:hover {
+  transition: 0.5s;
+  color: rgb(232, 89, 36);
+  padding: 10px 45px;
+}
+
+#gasto{
+  border: 3px solid  #d25121;
+  background-color: transparent;
+  color: white;
+  border-radius: 50px;
 }
 
 .textoCalculadora {
@@ -235,3 +257,5 @@ b {
   span {
     color: #d25121;
   }
+
+  
