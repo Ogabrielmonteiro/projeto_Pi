@@ -59,6 +59,8 @@ html {
 body {
   background-color: #1a1b1f;
 }
+
+/*----------------------------- NAVBAR--------------------------------*/
 /* Segura e alinha a navbar */
 .navbar {
   position: absolute;
@@ -123,6 +125,8 @@ body {
 }
 /* Seta um tamanho pro vídeo de background, o atributo 'z-index'
 serve para colocar o vídeo 'atrás' da navbar, como se fosse um sistema de camadas */
+
+/*----------------------------- MAIN --------------------------------*/
 .videoBg {
   width: 100%;
   display: flex;
@@ -339,6 +343,8 @@ serve para colocar o vídeo 'atrás' da navbar, como se fosse um sistema de cama
   align-items: center;
   justify-content: center;
 }
+
+/*----------------------------- FOOTER--------------------------------*/
 /* Está alinhando a div do footer no centro */
 .footer {
   height: 150px;
