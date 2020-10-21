@@ -65,7 +65,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 7vh; */
+  height: 7vh;
   background-color: transparent;
   width: 100%;
   z-index: 2;
@@ -119,7 +119,7 @@ body {
 }
 /* Mostra a página atual que o usuário está */
 .current {
-  color: tomato;
+  color: #d25121;
 }
 /* Seta um tamanho pro vídeo de background, o atributo 'z-index'
 serve para colocar o vídeo 'atrás' da navbar, como se fosse um sistema de camadas */

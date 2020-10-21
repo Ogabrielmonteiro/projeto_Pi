@@ -13,7 +13,7 @@
     <div class="navbar">
         <div class="containerNavbar">
             <a href="index.html">
-                <div class="imgHeader"></div>
+                <img class="imgHeader" src="./logo5g.png">
             </a>
             <img class="imgLogin" src="./img/login.png" alt="logo login">
         </div>
@@ -22,17 +22,19 @@
     <div class="login">
         <div class="loginBg">
             <div class="loginTexto">
-                <h3>Login</h3>
+                <h2>LOGIN</h2>
+                <p>Email</p>
                 <input type="text" id="email" class="loginIntens">
+                <p>Senha</p>
                 <input type="password" id="inSenha" class="loginIntens">
-                <button class="loginIntens" onclick="entrar1()" id="entrar">Entrar</button>
-                <p class="loginIntens">Esqueceu a senha?</p>
+                <button class="loginButton" onclick="entrar1()" id="entrar">Entrar</button><br>
+                <p><b>Esqueceu a senha?</b></p>
             </div>
         </div>
     </div>
 
     <div class="footer-end">
-        <p>Copyright © 2020-2020 5G Soluções LTDA</p>
+        <p>Copyright © 2020-2020 5G Solutions LTDA</p>
     </div>
 
 </body>
@@ -40,17 +42,17 @@
 </html>
 
 <script>
-        function entrar1(){
-            var senha = inSenha.value
-            var login = email.value
-            if(senha == 123456 && login == "extra@5g.com.br"){
-                 window.location.href = "./dashboard.html";
-            } else {
-                alert ("ACESSO NEGADO");
-            }
+    function entrar1() {
+        var senha = inSenha.value
+        var login = email.value
+        if (senha == 123456 && login == "extra@5g.com.br") {
+            window.location.href = "./dashboard.html";
+        } else {
+            alert("ACESSO NEGADO");
         }
-        
+    }
 
-    
+
+
 
 </script>
