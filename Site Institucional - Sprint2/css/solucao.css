@@ -14,7 +14,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    background-color: #1a1b1f;
+    opacity: ;
     width: 100%;
     z-index: 2;
   }
@@ -27,9 +28,9 @@
   }
 
   .imgHeader {
-    width: 160px;
-    height: 50px;
-    background-color: white;
+    width: 200px;
+    height: 60px;
+    margin-top: 10px;
   }
 
   .navbar ul {
@@ -43,8 +44,14 @@
   margin: 0 20px;
   color: white;
   font-weight: bold;
+  font-size: 20px;
 }
 
+.listamenu li a{
+  color: white;
+  font-size: 18.8px;
+
+}
 .login {
     margin-left: 200px;
   }
@@ -62,7 +69,9 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      background-color: #1a1b1f;
 
+    
 
   }
 
@@ -89,6 +98,7 @@
       display: flex;
     justify-content: center;
     margin-top: 10px;
+    color: white;
 
   }
 
@@ -106,6 +116,7 @@
       justify-content: flex-start;
       margin-left: 25%;
       margin-top: 50px;
+      color: #d25121;
   }
 
   .imgBloco2 {
@@ -123,19 +134,24 @@
     display: flex;
     justify-content: space-evenly;
     margin-top: 60px;
-
+  color: white;
 }
 
 .textoBloco2{
     width: 50%;
 }
 
-.propostaPai {
+b {
+  color: white;
+}
+.propostaPai b {
+  color: #d25121;
 }
 
 .propostaTitulo{
     margin-top: 70px;
     margin-bottom: 30px;
+    color: #d25121;
 }
 
 .botaoCalculadora {
@@ -216,4 +232,6 @@
     font-weight: bold;
   }
   
-  
+  span {
+    color: #d25121;
+  }
