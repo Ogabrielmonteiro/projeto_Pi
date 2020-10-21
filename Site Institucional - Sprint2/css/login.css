@@ -6,13 +6,18 @@
     font-family: monospace;
     font-size: 1.1rem;
 }
+body{
+    background-image: url('../img/moranguetes.jpeg');
+    width: 100vw;
+    height: 100vh;
+}
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 7vh;
     width: 100%;
-    background-color:#1a1b1f;
+    background-color:transparent;
 }
 .current{
     color: blueviolet;
@@ -35,7 +40,7 @@
 
 .login{
     height: 88vh;
-    background-color: #1a1b1f;
+    background-color:;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,11 +50,12 @@
     width: 40vh;
     display: flex;
     justify-content: center;
-    background-color: snow;
+    background-color: #1a1b1f;
     border-radius: 25px;
 }
 
 .loginTexto{
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,13 +70,26 @@
     height: 25px;
     width: 200px;
     background-color: snow;
-    color: black;
+    color: white;
 }
 .loginTexto h2{
     margin-bottom: 70px;
     font-weight: bold;
     font-size: 25px;
+    color: white;
 }
+
+.loginTexto p {
+    color: white;
+}
+
+.loginTexto u {
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+
 .loginButton {
     margin-top: 15px;
     padding: 10px 35px;
@@ -80,12 +99,13 @@
     cursor: pointer;
     font-weight: bold;
     transition: 0.5s;
-    color: black;
+    color: white;
 }
 .loginButton:hover {
     transition: 0.5s;
     color: rgb(232, 89, 36);
     padding: 10px 45px;
+    
 }
 
 .footer-end {
