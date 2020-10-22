@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+}
+h1 {
+  color: white;
+}
+.navbar {
+  background-color: #1a1b1f;
+  height: 7vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.navbarItens {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bancContainer {
+  display: flex;
+}
+.logo {
+  width: 200px;
+  height: 60px;
+}
+.login {
+  width: 80px;
+  height: 80px;
+}
+.bank {
+  position: absolute;
+  margin-bottom: 800px;
+}
+.bancada1,
+.bancada2,
+.bancada3 {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 93vh;
+  width: 33vw;
+  background-color: #1a1b1f;
+  color: white;
+}
+
+.img1,
+.img2,
+.img3 {
+  width: 100%;
+}

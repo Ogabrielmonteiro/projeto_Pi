@@ -1,118 +1,114 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-    outline-style: none;
-    font-family: monospace;
-    font-size: 1.1rem;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  outline-style: none;
+  font-family: monospace;
+  font-size: 1.1rem;
 }
-body{
-    background-image: url('../img/moranguetes.jpeg');
-    width: 100vw;
-    height: 100vh;
+body {
+  background-image: url("../img/moranguetes.jpeg");
+  width: 100vw;
+  height: 100vh;
 }
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 7vh;
-    width: 100%;
-    background-color:transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  width: 100%;
+  background-color: transparent;
 }
-.current{
-    color: blueviolet;
+.current {
+  color: blueviolet;
 }
 .containerNavbar {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .imgHeader {
-    margin-top: 10px;
-    width: 200px;
-    z-index: 10;
+  margin-top: 10px;
+  width: 200px;
+  z-index: 10;
 }
-.imgLogin{
-    width: 40px;  
-}
-
-.login{
-    height: 88vh;
-    background-color:;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.loginBg{
-    height: 45vh;
-    width: 40vh;
-    display: flex;
-    justify-content: center;
-    background-color: #1a1b1f;
-    border-radius: 25px;
+.imgLogin {
+  width: 40px;
 }
 
-.loginTexto{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 22px;
+.login {
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.loginIntens{
-    padding: 0 5px;
-    margin-bottom: 15px;
-    border: 3px solid #d25121;
-    height: 25px;
-    width: 200px;
-    background-color: snow;
-    color: white;
+.loginBg {
+  height: 45vh;
+  width: 40vh;
+  display: flex;
+  justify-content: center;
+  background-color: #1a1b1f;
+  border-radius: 25px;
 }
-.loginTexto h2{
-    margin-bottom: 70px;
-    font-weight: bold;
-    font-size: 25px;
-    color: white;
+
+.loginTexto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+.loginIntens {
+  padding: 0 5px;
+  margin-bottom: 15px;
+  border: 3px solid #d25121;
+  height: 25px;
+  width: 200px;
+  background-color: snow;
+  color: black;
+}
+.loginTexto h2 {
+  margin-bottom: 70px;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
 }
 
 .loginTexto p {
-    color: white;
+  color: white;
 }
 
 .loginTexto u {
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
 }
-
 
 .loginButton {
-    margin-top: 15px;
-    padding: 10px 35px;
-    border-radius: 50px;
-    border: 3px solid #d25121;
-    background-color: transparent;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.5s;
-    color: white;
+  margin-top: 15px;
+  padding: 10px 35px;
+  border-radius: 50px;
+  border: 3px solid #d25121;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.5s;
+  color: white;
 }
 .loginButton:hover {
-    transition: 0.5s;
-    color: rgb(232, 89, 36);
-    padding: 10px 45px;
-    
+  transition: 0.5s;
+  color: rgb(232, 89, 36);
+  padding: 10px 45px;
 }
 
 .footer-end {
-    height: 5vh;
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 5vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
