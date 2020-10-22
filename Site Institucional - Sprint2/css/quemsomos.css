@@ -1,189 +1,190 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-    outline-style: none;
-    font-family: monospace;
-    font-size: 1.1rem 
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  outline-style: none;
+  font-family: monospace;
+  font-size: 1.1rem;
+  line-height: 22px;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
-  body {
-    background-color: #1a1b1f;
-  }
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #1a1b1f;
+}
 
-  /*----------------------------- NAVBAR --------------------------------*/
+/*----------------------------- NAVBAR --------------------------------*/
 .navbar {
-    /* position: absolute; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 7vh; */
-    width: 100%;
-    /* z-index: 2; */
-    background-color: transparent;
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 7vh; */
+  width: 100%;
+  /* z-index: 2; */
+  background-color: transparent;
 }
 
 .containerNavbar {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .imgHeader {
-    margin-top: 10px;
-    width: 200px;
-    z-index: 10;
+  margin-top: 10px;
+  width: 200px;
+  z-index: 10;
 }
 .navbar ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
-.listamenu, .linavbar {
-    margin: 0 20px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
+.listamenu,
+.linavbar {
+  margin: 0 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .listamenu li a:hover {
-    transition: 0.3s;
-    color: tomato;
-  }
+  transition: 0.3s;
+  color: tomato;
+}
 
 .listamenu,
 .linavbar a {
-    color: white;
-    font-size: 19px;
-  }
+  color: white;
+  font-size: 19px;
+}
 
 .login {
-    margin-left: 200px;
+  margin-left: 200px;
 }
 
 .login a {
-    color: white;
-    font-size: 20px;
-  }
+  color: white;
+  font-size: 20px;
+}
 
-.current{
-    color: tomato;
+.current {
+  color: tomato;
 }
 
 /*----------------------------- MAIN --------------------------------*/
 .quemSomos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 700px;
-    justify-content: space-evenly;
-    background:  #1a1b1f;
-    color: whitesmoke   ;
-  }
-
-.quemSomosContainer{
-    width: 60%;
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 700px;
+  justify-content: space-evenly;
+  background: #1a1b1f;
+  color: whitesmoke;
 }
-.quemSomosTexto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
+
+.quemSomosContainer {
+  width: 60%;
+  display: flex;
+}
+.quemSomosTexto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
 }
 
 .quemSomosTexto h2 {
-    font-size: 23px;
-    color: rgb(232, 89, 36);
+  font-size: 23px;
+  color: rgb(232, 89, 36);
 }
 
 .quemSomosTexto p {
-    margin: 30px;
+  margin: 30px;
 }
 
-.quemSomosTexto img{
-    width: 100%;
-    border-radius: 8px;
+.quemSomosTexto img {
+  width: 100%;
+  border-radius: 8px;
 }
 
 /*----------------------------- FOOTER --------------------------------*/
 .footer {
-    height: 150px;
-    background: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  /* está alinhando os itens do footer no centro, no caso o "5gSoluções", "Contato" e "Redes Sociais" que tem lá dentro */
-  .footer-div {
-    width: 60%;
-    display: flex;
-    justify-content: space-evenly;
-    color: white;
-    font-weight: bold;
-  }
-  /* Alinha o conteúdo que tem dentro de cada div, exemplo os dados de contato, e o texto sobre a 5G Soluções */
-  .footer-conteudo {
-    display: flex;
-    flex-direction: column;
-    color: white;
-  }
-  /* line-height está aumentando a distancia entre as linhas, e esta pintando o conteúdo de branco com color */
-  .footer-contato {
-    line-height: 21px;
-    color: white;
-    margin: 0 10px 0 10px;
-  }
-  /*  muda a cor da letra do email para branco */
-  .footer-contato a {
-    color: white;
-  }
-  /* Da a cor ao email quando passa o mouse em cima */
-  .footer-contato a:hover {
-    color: tomato;
-    transition: 0.3s;
-  }
-  /* Seta um tamanho para as redes sociais */
-  .footer-social img {
-    display: flex;
-    height: 30px;
-    width: 30px;
-  }
-  /* Alinha os ícones das redes sociais horizontalmente e */
-  .redes-sociais {
-    display: flex;
-  }
-  /* Coloca a borda em volta dos icones das redes sociais */
-  .redes-sociais a {
-    border: 3px solid white;
-    padding: 3px;
-    transition: 0.5s;
-  }
-  /* Animação de efeito quando passa o mouse em cima das redes sociais. */
-  .redes-sociais a:hover {
-    transition: 0.3s;
-    border: 3px solid #d25121;
-  }
-  /* Da um espaçamento entre as redes sociais para elas não ficarem coladas */
-  .redesSociaisIMG {
-    margin-left: 5px;
-  }
-  /* Aumenta a ditancia dos títulos do footer com o conteúdo deles */
-  .footer-title {
-    margin-bottom: 20px;
-  }
-  /* Alinha, da cor e posiciona os itens do footer final *aquela barra branca* */
-  .footer-end {
-    height: 45px;
-    background-color: white;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-  }
-  
+  height: 150px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* está alinhando os itens do footer no centro, no caso o "5gSoluções", "Contato" e "Redes Sociais" que tem lá dentro */
+.footer-div {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  font-weight: bold;
+}
+/* Alinha o conteúdo que tem dentro de cada div, exemplo os dados de contato, e o texto sobre a 5G Soluções */
+.footer-conteudo {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+/* line-height está aumentando a distancia entre as linhas, e esta pintando o conteúdo de branco com color */
+.footer-contato {
+  line-height: 21px;
+  color: white;
+  margin: 0 10px 0 10px;
+}
+/*  muda a cor da letra do email para branco */
+.footer-contato a {
+  color: white;
+}
+/* Da a cor ao email quando passa o mouse em cima */
+.footer-contato a:hover {
+  color: tomato;
+  transition: 0.3s;
+}
+/* Seta um tamanho para as redes sociais */
+.footer-social img {
+  display: flex;
+  height: 30px;
+  width: 30px;
+}
+/* Alinha os ícones das redes sociais horizontalmente e */
+.redes-sociais {
+  display: flex;
+}
+/* Coloca a borda em volta dos icones das redes sociais */
+.redes-sociais a {
+  border: 3px solid white;
+  padding: 3px;
+  transition: 0.5s;
+}
+/* Animação de efeito quando passa o mouse em cima das redes sociais. */
+.redes-sociais a:hover {
+  transition: 0.3s;
+  border: 3px solid #d25121;
+}
+/* Da um espaçamento entre as redes sociais para elas não ficarem coladas */
+.redesSociaisIMG {
+  margin-left: 5px;
+}
+/* Aumenta a ditancia dos títulos do footer com o conteúdo deles */
+.footer-title {
+  margin-bottom: 20px;
+}
+/* Alinha, da cor e posiciona os itens do footer final *aquela barra branca* */
+.footer-end {
+  height: 45px;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}

@@ -1,45 +1,48 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-    outline-style: none;
-    font-family: monospace;
-    font-size: 1.1rem;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  /* Segura e alinha a navbar */
-  .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1a1b1f;
-    opacity: ;
-    width: 100%;
-    z-index: 2;
-  }
-  /* Faz a navbar ter um tamanho específico e alinha os objetos de dentro */
-  .containerNavbar {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  outline-style: none;
+  font-family: monospace;
+  font-size: 1.1rem;
+  line-height: 21px;
+}
+a {
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Segura e alinha a navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1b1f;
+  width: 100%;
+  z-index: 2;
+}
+/* Faz a navbar ter um tamanho específico e alinha os objetos de dentro */
+.containerNavbar {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .imgHeader {
-    width: 200px;
-    height: 60px;
-    margin-top: 10px;
-  }
+.imgHeader {
+  width: 200px;
+  height: 60px;
+  margin-top: 10px;
+}
 
-  .navbar ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-  }
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
 
-  .listamenu,
+.listamenu,
 .linavbar {
   margin: 0 20px;
   color: white;
@@ -47,100 +50,103 @@
   font-size: 20px;
 }
 
-.listamenu li a{
+.listamenu li a {
   color: white;
   font-size: 18.8px;
-
 }
 .login {
-    margin-left: 200px;
-  }
-  /* Pinta a tag <a> do login de branco */
-  .login a {
-    color: white;
-  }
-  /* Mostra a página atual que o usuário está */
-  .current {
-    color: tomato;
-  }
+  margin-left: 200px;
+}
+/* Pinta a tag <a> do login de branco */
+.login a {
+  color: white;
+}
+/* Mostra a página atual que o usuário está */
+.current {
+  color: tomato;
+}
 
-  .paidetodos {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: #1a1b1f;
+.paidetodos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1b1f;
+}
 
-  }
+.imgBloco1 {
+  display: flex;
+  flex-direction: column;
+}
+.img1 {
+  background-image: url(../img/bancada1-solucao.png);
+  width: 170px;
+  height: 150px;
+  margin-right: 10px;
+}
+.img2 {
+  background-image: url(../img/bancada2-solucao.png);
+  width: 170px;
+  height: 150px;
+  margin-right: 10px;
+}
+.img3 {
+  background-image: url(../img/bancada3-solucao.png);
+  margin-top: 10px;
+  width: 350px;
+  height: 150px;
+}
 
-  .imgBloco1 {
-     display: flex;
-    flex-direction: column;
-  }
-  .img1,.img2 {
-      width: 150px;
-      height: 150px;
-      background-color: gray;
-      margin-right: 10px;
-  }
-  .img3 {
-    margin-top: 10px;
-    width: 310px;
-    height: 150px;
-    background-color: gray;
-  }
-
-
-  .solucaoBloco1 {
-      width: 70%;
-      display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    color: white;
-
-  }
-
-  .textoBloco1 {
-      width: 50%;
-    margin-right: 8%;
-  }
-
-  .imagens12 {
-      display: flex;
-  }
-  .solucaoTitulo {
-      width: 50%;
-      display: flex;
-      justify-content: flex-start;
-      margin-left: 25%;
-      margin-top: 50px;
-      color: #d25121;
-  }
-  .solucaoTitulo h2 {
-      font-size: 23px;
-      color: rgb(232, 89, 36);
-  }
-
-  .imgBloco2 {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    background-color: gray;
-    justify-content: center;
-    
- }
-
- .solucaoBloco2 {
-    width: 70%;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 60px;
+.solucaoBloco1 {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
   color: white;
 }
 
-.textoBloco2{
-    width: 50%;
+.textoBloco1 {
+  width: 50%;
+  margin-right: 8%;
+  margin-top: 40px;
+}
+
+.imagens12 {
+  display: flex;
+}
+.solucaoTitulo {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 25%;
+  margin-top: 50px;
+  color: #d25121;
+}
+.solucaoTitulo h2 {
+  font-size: 23px;
+  color: rgb(232, 89, 36);
+}
+
+.imgBloco2 {
+  background-image: url(../img/caixa-frutas.png);
+  border-radius: 40px;
+  width: 360px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.solucaoBloco2 {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+  color: white;
+}
+
+.textoBloco2 {
+  width: 50%;
 }
 
 b {
@@ -150,10 +156,10 @@ b {
   color: #d25121;
 }
 
-.propostaTitulo{
-    margin-top: 70px;
-    margin-bottom: 30px;
-    color: #d25121;
+.propostaTitulo {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  color: #d25121;
 }
 
 .botaoCalculadora {
@@ -174,90 +180,88 @@ b {
   padding: 10px 45px;
 }
 
-#gasto{
-  border: 3px solid  #d25121;
+#gasto {
+  border: 3px solid #d25121;
   background-color: transparent;
   color: white;
   border-radius: 50px;
 }
 
 .textoCalculadora {
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 25px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 25px;
 }
 
 .footer {
-    height: 150px;
-    background: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  /* está alinhando os itens do footer no centro, no caso o "5gSoluções", "Contato" e "Redes Sociais" que tem lá dentro */
-  .footer-div {
-    width: 60%;
-    display: flex;
-    justify-content: space-evenly;
-    color: white;
-    font-weight: bold;
-  }
-  /* Alinha o conteúdo que tem dentro de cada div, exemplo os dados de contato, e o texto sobre a 5G Soluções */
-  .footer-conteudo {
-    display: flex;
-    flex-direction: column;
-    color: white;
-  }
-  /* line-height está aumentando a distancia entre as linhas, e esta pintando o conteúdo de branco com color */
-  .footer-contato {
-    line-height: 21px;
-    color: white;
-    margin: 0 10px 0 10px;
-  }
-  /* Seta um tamanho para as redes sociais */
-  .footer-social img {
-    display: flex;
-    height: 30px;
-    width: 30px;
-  }
-  /* Alinha os ícones das redes sociais horizontalmente e */
-  .redes-sociais {
-    display: flex;
-  }
-  /* Coloca a borda em volta dos icones das redes sociais */
-  .redes-sociais a {
-    border: 3px solid white;
-    padding: 3px;
-    transition: 0.5s;
-  }
-  /* Animação de efeito quando passa o mouse em cima das redes sociais. */
-  .redes-sociais a:hover {
-    transition: 0.3s;
-    border: 3px solid #d25121;
-  }
-  /* Da um espaçamento entre as redes sociais para elas não ficarem coladas */
-  .redesSociaisIMG {
-    margin-left: 5px;
-  }
-  /* Aumenta a ditancia dos títulos do footer com o conteúdo deles */
-  .footer-title {
-    margin-bottom: 20px;
-  }
-  /* Alinha, da cor e posiciona os itens do footer final *aquela barra branca* */
-  .footer-end {
-    height: 45px;
-    background-color: white;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-  }
-  
-  span {
-    color: #d25121;
-  }
+  height: 150px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* está alinhando os itens do footer no centro, no caso o "5gSoluções", "Contato" e "Redes Sociais" que tem lá dentro */
+.footer-div {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  font-weight: bold;
+}
+/* Alinha o conteúdo que tem dentro de cada div, exemplo os dados de contato, e o texto sobre a 5G Soluções */
+.footer-conteudo {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+/* line-height está aumentando a distancia entre as linhas, e esta pintando o conteúdo de branco com color */
+.footer-contato {
+  line-height: 21px;
+  color: white;
+  margin: 0 10px 0 10px;
+}
+/* Seta um tamanho para as redes sociais */
+.footer-social img {
+  display: flex;
+  height: 30px;
+  width: 30px;
+}
+/* Alinha os ícones das redes sociais horizontalmente e */
+.redes-sociais {
+  display: flex;
+}
+/* Coloca a borda em volta dos icones das redes sociais */
+.redes-sociais a {
+  border: 3px solid white;
+  padding: 3px;
+  transition: 0.5s;
+}
+/* Animação de efeito quando passa o mouse em cima das redes sociais. */
+.redes-sociais a:hover {
+  transition: 0.3s;
+  border: 3px solid #d25121;
+}
+/* Da um espaçamento entre as redes sociais para elas não ficarem coladas */
+.redesSociaisIMG {
+  margin-left: 5px;
+}
+/* Aumenta a ditancia dos títulos do footer com o conteúdo deles */
+.footer-title {
+  margin-bottom: 20px;
+}
+/* Alinha, da cor e posiciona os itens do footer final *aquela barra branca* */
+.footer-end {
+  height: 45px;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
 
-  
+span {
+  color: #d25121;
+}
