@@ -11,6 +11,8 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
+/*----------------------------- NAVBAR--------------------------------*/
 .navbar {
   display: flex;
   justify-content: center;
@@ -39,6 +41,8 @@ body {
   width: 40px;
 }
 
+
+/*----------------------------- MAIN --------------------------------*/
 .login {
   height: 88vh;
   display: flex;
@@ -105,6 +109,7 @@ body {
   padding: 10px 45px;
 }
 
+/*----------------------------- FOOTER--------------------------------*/
 .footer-end {
   height: 5vh;
   background-color: black;
