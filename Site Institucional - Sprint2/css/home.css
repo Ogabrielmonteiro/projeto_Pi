@@ -133,6 +133,19 @@ serve para colocar o vídeo 'atrás' da navbar, como se fosse um sistema de cama
   position: relative;
   z-index: 1;
 }
+.msgBG {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.msgBG h1 {
+  position: absolute;
+  margin-bottom: 1240px;
+  z-index: 3000;
+  color: white;
+  font-size: 6rem;
+  text-shadow: 4px 3px black;
+}
 /* permite posicionar o botão no centro e no meio do BG */
 .buttonBG {
   z-index: 3;
@@ -144,6 +157,8 @@ serve para colocar o vídeo 'atrás' da navbar, como se fosse um sistema de cama
 }
 /* altera a cor da fonte do botão do background */
 .btnBg {
+  height: 35px;
+  width: 20px;
   color: white;
 }
 /* posiciona o botão no background */
@@ -160,6 +175,7 @@ serve para colocar o vídeo 'atrás' da navbar, como se fosse um sistema de cama
   cursor: pointer;
   transition: 0.5s;
 }
+
 /* O hover ativa quando passa o mouse em cima, e muda as propriedades que estavam antes, quando tira o mouse volta ao normal */
 .buttonBTN:hover {
   transition: 0.5s;

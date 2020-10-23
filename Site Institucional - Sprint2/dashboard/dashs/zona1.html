@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/zona1.css">
+    <script src="https://www.chartjs.org/dist/2.9.3/Chart.min.js"></script>
+    <script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+    <style>
+        canvas {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+    </style>
+    <title>Dashs</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="navbarItens">
+            <div>
+                <a href="../../index.html"> <img class="logo" src="../../logo5g.png"></a>
+            </div>
+
+            <div>
+                <img class="iconM" src="../../extra.png" class="login">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="barraLateral">
+            <div class="zona1">
+                <p>Zona 1</p>
+            </div>
+            <div oncanplay="" class="zona2">
+                <a href="./zona2.html">
+                    <p>Zona 2</p>
+                </a>
+            </div>
+            <div class="zona3">
+                <a href="./zona3.html">
+                    <p>Zona 3</p>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="conteudo">
+
+            <h1> Zona 1 </h1>
+            <section>
+                <h2>Média: 0.50 ºC</h2>
+                <h2>Média Hora: 0.50 ºC</h2>
+            </section>
+            <div style="width:60%;">
+                <canvas id="c_grafico"></canvas>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+    <script src="./js/zona1.js"></script>
+</body>
+
+</html>
