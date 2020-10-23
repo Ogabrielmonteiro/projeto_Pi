@@ -10,7 +10,6 @@ Gabriel Lemos
 Gabriel Monteiro
 Gabriel Ortelan
 Gabriela Foschini
-Rafael Holland
 
 Sprint 2:
 Gabriel Monteiro
