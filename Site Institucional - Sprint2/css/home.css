@@ -437,3 +437,27 @@ serve para colocar o vídeo 'atrás' da navbar, como se fosse um sistema de cama
   justify-content: center;
   font-weight: bold;
 }
+.setaDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.seta-animation {
+  animation: seta 1.5s infinite;
+  transform: rotate(90deg);
+  width: 60px;
+  position: absolute;
+  z-index: 5;
+}
+
+@keyframes seta {
+  0% {
+    bottom: 10%;
+  }
+  50% {
+    bottom: 5%;
+  }
+  100% {
+    bottom: 10%;
+  }
+}
