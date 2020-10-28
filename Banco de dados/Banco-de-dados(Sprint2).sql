@@ -163,11 +163,15 @@ insert into Zonas values
         ('08.5', '32'),
         ('13.3', '33');
         
-	select * from cliente, filiais, bancadas, zonas, leitura where fkZona = idZona and fkBancada = idBancadas and fkFiliais = idFiliais and fkCliente = idCliente;
-    
-    
-    
-    
+-- Select geral
+select * from cliente, filiais, bancadas, zonas, leitura where fkZona = idZona and fkBancada = idBancadas and fkFiliais = idFiliais and fkCliente = idCliente;
+-- Select informações bancada,zona e leitura
+select * from bancadas,zonas,leitura where idZona=fkZona and idBancadas=fkBancada;
+-- Select zonas e leitura
+select nome,leitura.* from zonas,leitura where fkZona=idZona;
+ 
+-- Select com as médias de cada zona 
+select fkZona, truncate(avg(temperatura),1) from Leitura group by fkZona;
     
     
         
