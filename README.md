@@ -2,8 +2,6 @@
 
 Projeto Bancada Refrigerada - (ADS 1A - 2020/2)
 
-Grupo 1:
-
 Sprint 1:
 Gabriel Eduardo
 Gabriel Lemos
