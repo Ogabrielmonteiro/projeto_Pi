@@ -6,17 +6,17 @@
   text-decoration: none;
 }
 a {
-  color: black;
+  color: white;
 }
 body {
-  background: #1a1b1f;
+  background: whitesmoke;
 }
 .container {
   display: grid;
   grid-template-columns: 214px 1fr;
 }
 .navbar {
-  background-color: black;
+  background-color: #1a1b1f;
   height: 7vh;
   width: 100%;
   display: flex;
@@ -30,7 +30,7 @@ body {
   align-items: center;
 }
 .barraLateral {
-  background-color: white;
+  background-color: #1a1b1f;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,7 +92,7 @@ body {
   background-color: #d25121;
 }
 .conteudo {
-  color: white;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,7 +102,7 @@ body {
   z-index: 1000;
 }
 .graficos {
-  color: white;
+  color: black;
   display: flex;
   align-items: center;
   flex-direction: column;
