@@ -74,7 +74,7 @@ body {
 }
 /* Faz a navbar ter um tamanho específico e alinha os objetos de dentro */
 .containerNavbar {
-  width: 60%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -140,10 +140,10 @@ serve para colocar o vídeo 'atrás' da navbar, como se fosse um sistema de cama
 }
 .msgBG h1 {
   position: absolute;
-  margin-bottom: 1240px;
+  margin-bottom: 1000px;
   z-index: 3000;
   color: white;
-  font-size: 6rem;
+  font-size: 3rem;
   text-shadow: 4px 3px black;
 }
 /* permite posicionar o botão no centro e no meio do BG */
@@ -437,6 +437,8 @@ serve para colocar o vídeo 'atrás' da navbar, como se fosse um sistema de cama
   justify-content: center;
   font-weight: bold;
 }
+
+/* Começo da seta */
 .setaDiv {
   display: flex;
   align-items: center;
@@ -450,6 +452,7 @@ serve para colocar o vídeo 'atrás' da navbar, como se fosse um sistema de cama
   z-index: 5;
 }
 
+/* Animação da seta, o keyframe seta o movimento inicial e final da animação */
 @keyframes seta {
   0% {
     bottom: 10%;

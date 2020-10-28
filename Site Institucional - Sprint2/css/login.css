@@ -41,7 +41,6 @@ body {
   width: 40px;
 }
 
-
 /*----------------------------- MAIN --------------------------------*/
 .login {
   height: 88vh;
@@ -50,8 +49,8 @@ body {
   align-items: center;
 }
 .loginBg {
-  height: 45vh;
-  width: 40vh;
+  height: 52vh;
+  width: 25vw;
   display: flex;
   justify-content: center;
   background-color: #1a1b1f;
