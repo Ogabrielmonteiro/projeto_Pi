@@ -15,5 +15,4 @@ Rafael Holland
 Nicolas Sousa Conde
 Talita Cabral
 Gabriel Ortelan
-Larissa Lima
-
+Larissa Lima.
